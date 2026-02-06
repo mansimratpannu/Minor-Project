@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Code Attendance System | Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="brand">QR Code Attendance</div>
+      <div class="nav-links">
+        <a href="generate.html">Generate</a>
+        <a href="scan.html">Scan</a>
+        <a href="report.html">Report</a>
+        <a href="index.html">Logout</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="card fade-in">
+        <h2>Quick Actions</h2>
+        <p>Manage attendance with QR codes, right from one dashboard.</p>
+        <div class="grid stagger">
+          <div class="tile">
+            <h3>Generate QR Code</h3>
+            <p>Create a QR for your class session.</p>
+            <a class="button" href="generate.html">Open Generator</a>
+          </div>
+          <div class="tile">
+            <h3>Scan QR Code</h3>
+            <p>Use your webcam to mark attendance.</p>
+            <a class="button secondary" href="scan.html">Start Scanning</a>
+          </div>
+          <div class="tile">
+            <h3>Attendance Report</h3>
+            <p>View a demo report of student status.</p>
+            <a class="button ghost" href="report.html">View Report</a>
+          </div>
+          <div class="tile">
+            <h3>Logout</h3>
+            <p>Return to the login page.</p>
+            <a class="button ghost" href="index.html">Logout</a>
+          </div>
+        </div>
+      </div>
+      <div class="card fade-in">
+        <h2>Today&#39;s Snapshot</h2>
+        <p class="notice">97% students present in Demo Mode</p>
+        <p class="footer-note">All data shown is sample-only for the prototype.</p>
+      </div>
+    </section>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

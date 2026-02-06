@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Code Attendance System | Scan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="brand">QR Code Attendance</div>
+      <div class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="generate.html">Generate</a>
+        <a href="report.html">Report</a>
+        <a href="index.html">Logout</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="card fade-in">
+        <h2>Scan QR Code</h2>
+        <p>Use your webcam to scan a QR code and mark attendance.</p>
+        <div class="form-group">
+          <button class="button" data-start-scan>Start Scanning</button>
+          <button class="button ghost" data-stop-scan>Stop</button>
+        </div>
+        <p class="footer-note" data-scan-message></p>
+      </div>
+      <div class="card fade-in">
+        <h2>Camera Feed</h2>
+        <div id="reader" class="qr-box"></div>
+        <p class="footer-note">Demo mode only. Camera permission is required.</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://unpkg.com/html5-qrcode"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

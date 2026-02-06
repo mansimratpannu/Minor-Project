@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Code Attendance System | Generate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="brand">QR Code Attendance</div>
+      <div class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="scan.html">Scan</a>
+        <a href="report.html">Report</a>
+        <a href="index.html">Logout</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="card fade-in">
+        <h2>Generate QR Code</h2>
+        <p>Select the class and subject to generate a session QR code.</p>
+        <div class="form-group">
+          <label for="class-select">Class</label>
+          <select id="class-select">
+            <option>CS-101</option>
+            <option>CS-202</option>
+            <option>IT-305</option>
+            <option>ECE-112</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="subject-select">Subject</label>
+          <select id="subject-select">
+            <option>Web Technology</option>
+            <option>Data Structures</option>
+            <option>Database Systems</option>
+            <option>Operating Systems</option>
+          </select>
+        </div>
+        <button class="button" data-generate-qr>Generate QR Code</button>
+      </div>
+
+      <div class="card fade-in">
+        <h2>QR Preview</h2>
+        <div id="qr-output" class="qr-box"></div>
+        <p class="footer-note">Use this QR code for demo attendance marking.</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

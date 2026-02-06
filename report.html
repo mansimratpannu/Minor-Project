@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Code Attendance System | Report</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="brand">QR Code Attendance</div>
+      <div class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="generate.html">Generate</a>
+        <a href="scan.html">Scan</a>
+        <a href="index.html">Logout</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="card fade-in">
+        <h2>Attendance Report</h2>
+        <p>Search by student name, date, or status.</p>
+        <div class="form-group">
+          <input type="text" placeholder="Search report..." data-report-search />
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Student Name</th>
+              <th>Date</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Mansimrat</td><td>Feb 01, 2026</td><td>Present</td></tr>
+            <tr><td>Pinky</td><td>Feb 01, 2026</td><td>Present</td></tr>
+            <tr><td>Jotbir</td><td>Feb 01, 2026</td><td>Absent</td></tr>
+            <tr><td>Goofy</td><td>Feb 02, 2026</td><td>Present</td></tr>
+            <tr><td>Rajwinder</td><td>Feb 02, 2026</td><td>Late</td></tr>
+            <tr><td>Manroop</td><td>Feb 03, 2026</td><td>Present</td></tr>
+            <tr><td>Muskan</td><td>Feb 03, 2026</td><td>Present</td></tr>
+          </tbody>
+        </table>
+        <p class="footer-note">This is static demo data for the prototype.</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
